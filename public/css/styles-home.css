@@ -1,0 +1,121 @@
+:root {
+    --font-primary: "Playfair Display", serif;
+}
+
+
+.navbar-bg{
+    background-color: #931A21;
+}
+.text-posts{
+    font-family: var(--font-primary);
+    color: #931A21;
+}
+:root {
+    --main-color: #931A23;
+    --second-color: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: font-code ;
+    src: url(../webfonts/Oswald-VariableFont_wght.ttf);
+  }
+
+  .font-main{
+    font-family: 'font-code';
+  }
+
+
+
+  /* Navbar */
+  .best {
+    background-color: var(--main-color);
+  }
+  
+  .navbar .nav-link {
+    position: relative;
+  }
+  
+  .navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--second-color);
+    transition: 0.4s;
+  }
+  
+  .navbar .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .navbar .nav-item {
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-link.active {
+    color: var(--second-color); 
+  }
+  
+  .navbar .nav-link.active::after {
+    width: 100%;
+    background-color: var(--second-color);
+  }
+  
+
+
+
+  /* Buttons */
+  nav .lang {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 8px 12px; 
+    font-size: medium;
+    background-color: transparent;
+    color: var(--second-color); 
+    cursor: pointer;
+    text-decoration: none; 
+    transition: all 0.3s ease-in-out; 
+}
+
+nav .lang:hover {
+    background-color: var(--second-color) !important;
+    color: var(--main-color) !important;
+    text-decoration: none !important;
+}
+
+  .click a{
+    text-decoration: none;
+    color: var(--second-color);
+    
+    border: 1px;
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.4s;
+  }
+  .click  {
+    
+    background-color: transparent;
+    border: 1px;
+    color: var(--second-color);
+    border-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.4s;
+  }
+  
+  .click:hover a {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    
+  }
