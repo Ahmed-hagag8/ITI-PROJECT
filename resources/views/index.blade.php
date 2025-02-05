@@ -48,12 +48,12 @@
       </div>
     </nav>
   
-  <h1 class="text-center m-5 text-posts">Posts</h1>
+  <h1 class="text-center pt-5 text-posts mt-5">Posts</h1>
 <div class="m-5  border border-black">
     
-    <div class="container ">
+    <div class="container-fluid">
         
-      <table class="table table-bordered table-striped">
+      <table class="table table-bordered table-striped w-100 mt-3">
         <thead>
             <tr>
                 <th scope="col">ID</th>

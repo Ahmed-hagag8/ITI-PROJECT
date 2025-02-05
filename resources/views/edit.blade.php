@@ -25,7 +25,7 @@
                         <label for="post-description" class="form-label">Description</label>
                         <input value="{{ $post->description }}" name="description" class="form-control" id="post-description" rows="5" required ></input">
                     </div>
-                    <input type="submit" value="Update" />
+                    <input class="btn btn-outline-danger" type="submit" value="Update" />
                 </form>
             </div>
         </div>

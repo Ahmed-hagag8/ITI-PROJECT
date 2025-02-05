@@ -32,7 +32,7 @@
                         <label for="post-description" class="form-label">Description</label>
                         <textarea name="description" class="form-control" id="post-description" rows="5" required></textarea>
                     </div>
-                    <input type="submit" value="Submit" />
+                    <input class="btn btn-success" type="submit" value="Submit" />
                 </form>
             </div>
         </div>
@@ -55,11 +55,11 @@
                         <td>{{ $post->title }}</td>
                         <td>{{ $post->description }}</td>
                         <td>
-                            <a href="{{ url('post/'.$post->id.'/edit') }}" class="btn btn-primary">Edit</a>
+                            <a href="{{ url('post/'.$post->id.'/edit') }}" class="btn btn-warning">Edit</a>
                             <form action="{{ route('delete', $post->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit">Delete</button>
+                                <button class="btn btn-danger mt-2" type="submit">Delete</button>
                             </form>
                         </td>
                     </tr>
